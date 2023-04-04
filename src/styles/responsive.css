@@ -1,0 +1,52 @@
+@media screen and (min-width: 720px) {
+    #card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 10px;
+    }
+  
+    #drawer {
+      position: static;
+      transform: translate(0, 0);
+    }
+  
+    .navigation {
+      display: flex;
+    }
+   
+    #hamburger {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    #card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr)
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 1200px;
+    }
+  
+    .hero {
+      min-width: 1000px;
+      border-radius: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .hero {
+        background: url(../public/images/heros/hero-image_4-small.jpg);
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .hero {
+        background: url(../public/images/heros/hero-image_4-large.jpg);
+    }
+  }
